@@ -29,7 +29,8 @@ def json2dict():
     return dictMembers
 
 if __name__ == "__main__":
-    xlsx2json('Κατάσταση-ενεργών-μελών-Δεκέμβριος-2021.xlsx')
+    xlsxFilename = "dummy.xlsx"
+    xlsx2json(xlsxFilename)
     members = json2dict()
     for member in range(len(members)):
         print("Το μέλος ονομάζεται {} {} (email: {}).\n".format(members[member]['Όνομα'],
